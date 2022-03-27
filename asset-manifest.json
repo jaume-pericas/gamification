@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/gamification/static/css/main.c10288aa.css",
+    "main.js": "/gamification/static/js/main.f2ad5a6a.js",
+    "static/js/787.5b48ff4d.chunk.js": "/gamification/static/js/787.5b48ff4d.chunk.js",
+    "index.html": "/gamification/index.html",
+    "main.c10288aa.css.map": "/gamification/static/css/main.c10288aa.css.map",
+    "main.f2ad5a6a.js.map": "/gamification/static/js/main.f2ad5a6a.js.map",
+    "787.5b48ff4d.chunk.js.map": "/gamification/static/js/787.5b48ff4d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c10288aa.css",
+    "static/js/main.f2ad5a6a.js"
+  ]
+}
