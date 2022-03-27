@@ -65,7 +65,7 @@ const AppProvider = ({ children }) => {
             
         },
         loadUser: () => {
-            if(appState.user != ""){
+            if(appState.user !== ""){
                 return;
             } 
             let headers = {
