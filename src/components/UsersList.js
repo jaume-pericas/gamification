@@ -13,7 +13,7 @@ export const UsersList = (prop) => {
         }
     
         const fetchData = async () => {
-            const response = await fetch('http://gamificacio.test/api/team/'+prop.module, {
+            const response = await fetch('https://jaumepina.hostignition.com/gamification/api/team/'+prop.module, {
                 method: "GET",
                 headers: headers
             });

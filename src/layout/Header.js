@@ -1,5 +1,6 @@
 import React, {useContext} from "react";
 import {AppContext} from "../AppContextProvider";
+
 import {
     Link
   } from "react-router-dom";
@@ -13,15 +14,15 @@ export default function Header({onClick}) {
 
     let menu = <div className="lg:block">
                 <ul className="inline-flex" >
-                    <li className="nav-item"><Link className="px-4 font-bold" to="/">Home</Link></li>
-                    <li className="nav-item"><Link className="px-4 hover:text-gray-800" to="/login">login</Link></li>
+                    <li className="nav-item"><Link className="px-4 font-bold" to="/gamification/">Home</Link></li>
+                    <li className="nav-item"><Link className="px-4 hover:text-gray-800" to="/gamification/login">login</Link></li>
                 </ul>
             </div>;
     if(access_token != ''){
         menu = <div className=" lg:block">
                     <ul className="inline-flex" >
-                        <li className="nav-item"><Link className="px-4 font-bold" to="/">Home</Link></li>
-                        <li className="nav-item"><Link className="px-4 hover:text-gray-800" to="/dashboard">Dashboard</Link></li>
+                        <li className="nav-item"><Link className="px-4 font-bold" to="/gamification/">Home</Link></li>
+                        <li className="nav-item"><Link className="px-4 hover:text-gray-800" to="/gamification/dashboard">Dashboard</Link></li>
                         <li>
                         <button id="dropdownNavbarLink" onClick={() => toggleMenu() } data-dropdown-toggle="dropdownNavbar" className="px-4 hover:text-gray-800" >CRUD</button>
                             <div id="dropdownNavbar" className="hidden absolute z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
@@ -49,7 +50,7 @@ export default function Header({onClick}) {
         <nav>
             <div className="container mx-auto px-6 py-2 flex justify-between items-center">
                 <div>
-                <Link className="font-bold text-2xl lg:text-4xl alternative-font" to="/">
+                <Link className="font-bold text-2xl lg:text-4xl alternative-font" to="/gamification/">
                     Gamification
                 </Link>
                 </div>

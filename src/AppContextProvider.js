@@ -46,7 +46,7 @@ const AppProvider = ({ children }) => {
                 "Access-Control-Origin": "*"
             }
         
-            fetch("http://gamificacio.test/api/login", {
+            fetch("https://jaumepina.hostignition.com/gamification/api/login", {
                 method: "POST",
                 headers: headers,
                 body:  JSON.stringify(data)
@@ -74,7 +74,7 @@ const AppProvider = ({ children }) => {
                 "Authorization": `Bearer ${appState.access_token}` 
             }
         
-            fetch("http://gamificacio.test/api/user", {
+            fetch("https://jaumepina.hostignition.com/gamification/api/user", {
                 method: "GET",
                 headers: headers
             })

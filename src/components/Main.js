@@ -15,10 +15,10 @@ export const Main = () => {
 
     return ( 
         <Switch>
-        <Route path="/login" element={access_token != '' ? <Navigate to="/dashboard" replace /> : <Login  />} >
+        <Route path="/gamification/login" element={access_token != '' ? <Navigate to="/gamification/dashboard" replace /> : <Login  />} >
           
         </Route>
-        <Route path="/dashboard" element={access_token == '' ? <Navigate to="/" replace /> : <Dashboard  />} >
+        <Route path="/gamification/dashboard" element={access_token == '' ? <Navigate to="/gamification/" replace /> : <Dashboard  />} >
           
         </Route>
         <Route path="*" element={<Home  />} ></Route>
